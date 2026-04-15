@@ -44,10 +44,15 @@ def insert_data(file):
 
 def get_json_file_name():
     filelist = []
-    for file in glob.glob("/home/hdh/pg_py-Lab1_2/files/*.json"):
-        filelist.append(file)
+    try:
+        for file in glob.glob("/home/hdh/pg_py-Lab1_2/files/*.json"):
+            filelist.append(file)
+    except Exception as e:
+        print(e)
+        return (filelist)
     return(filelist)
-# Press the green button in the gutter to run the script.
+
+
 if __name__ == '__main__':
 
     for f in get_json_file_name():
