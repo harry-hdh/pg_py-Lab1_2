@@ -1,0 +1,18 @@
+[project]
+name = "pg-py-lab1-2"
+version = "0.1.0"
+description = "lab"
+authors = [
+    {name = "harry-hdh",email = "hdh997@outlook.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "configparser (>=7.2.0,<8.0.0)",
+    "psycopg2 (>=2.9.11,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
